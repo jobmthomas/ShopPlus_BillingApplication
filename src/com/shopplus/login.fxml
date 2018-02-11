@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox minHeight="199.0" prefHeight="199.0" prefWidth="423.0"
+	xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+	fx:controller="controllers.LoginController">
+	<children>
+		<MenuBar VBox.vgrow="NEVER" />
+		<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="174.0"
+			prefWidth="423.0" VBox.vgrow="ALWAYS">
+			<children>
+				<Label layoutX="120.0" layoutY="52.0" prefWidth="94.0" text="Username" />
+				<Label layoutX="120.0" layoutY="94.0" prefWidth="59.0" text="Password" />
+				<TextField fx:id="username" layoutX="214.0" layoutY="49.0"
+					prefWidth="200.0" />
+				<PasswordField fx:id="password" layoutX="214.0"
+					layoutY="91.0" prefWidth="200.0" />
+				<Button layoutX="360.0" layoutY="134.0" mnemonicParsing="false"
+					onKeyPressed="#loginEnter" onMouseClicked="#login" text="Login" />
+				<ImageView fx:id="img" fitHeight="102.9438720410153"
+					fitWidth="75.28730773925781" layoutX="29.0" layoutY="40.0"
+					pickOnBounds="true" preserveRatio="true" />
+				<Label fx:id="loginMessage" layoutX="120.0" layoutY="139.0"
+					prefWidth="213.0" text="" />
+				<Button contentDisplay="CENTER" graphicTextGap="0.0" layoutX="381.0"
+					layoutY="4.0" minHeight="19.0" minWidth="13.0" mnemonicParsing="false"
+					onMouseClicked="#close" prefHeight="26.0" prefWidth="32.0" text="X"
+					textAlignment="CENTER" wrapText="true" />
+			</children>
+		</AnchorPane>
+	</children>
+</VBox>

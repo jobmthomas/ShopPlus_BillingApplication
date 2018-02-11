@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import controllers.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="483.0"
+	prefWidth="1083.9999000000025" xmlns:fx="http://javafx.com/fxml/1"
+	xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.DealerManagementController">
+	<children>
+		<Label layoutX="40.0" layoutY="80.0" text="Dealer Name" />
+		<Label layoutX="67.0" layoutY="112.0" text="Address" />
+		<TextField fx:id="dealerName" layoutX="154.0" layoutY="77.0"
+			prefWidth="200.0" />
+		<TextArea fx:id="dealerAddress" layoutX="154.0" layoutY="115.0"
+			prefHeight="290.0" prefWidth="321.0" wrapText="true" />
+		<Button layoutX="430.0" layoutY="417.0" mnemonicParsing="false"
+			onMouseClicked="#save" text="Save" />
+		<Button layoutX="291.0" layoutY="419.0" mnemonicParsing="false"
+			onMouseClicked="#clear" text="Clear" />
+		<TableView fx:id="dealerTable" layoutX="610.0" layoutY="118.0"
+			prefHeight="290.0" prefWidth="427.0">
+			<columns>
+				<TableColumn maxWidth="5000.0" minWidth="10.0"
+					prefWidth="156.0" text="Dealer Name" fx:id="dealerNameColumn" />
+				<TableColumn maxWidth="5000.0" minWidth="10.0"
+					prefWidth="267.0" resizable="true" text="Address" fx:id="dealerAddressColumn" />
+			</columns>
+		</TableView>
+		<Separator layoutX="0.0" layoutY="46.0" prefWidth="1084.0" />
+		<AutoCompleteTextField fx:id="dealerNameAutofill"
+			layoutX="700.0" layoutY="77.0" prefWidth="160.0" />
+		<Label layoutX="610.0" layoutY="80.0" text="Dealer Name" />
+		<CheckBox fx:id="likeSearch" layoutX="877.0" layoutY="80.0"
+			mnemonicParsing="false" text="Like search" />
+		<Button layoutX="972.0" layoutY="75.0" mnemonicParsing="false"
+			onMouseClicked="#searchDealer" text="Search" />
+		<Separator layoutX="539.0" layoutY="64.0" minWidth="1.99993896484375"
+			orientation="VERTICAL" prefHeight="356.0" prefWidth="1.99993896484375" />
+		<Button layoutX="154.0" layoutY="417.0" mnemonicParsing="false"
+			onMouseClicked="#delete" text="Delete" />
+		<Label fx:id="dealerCountDown" layoutX="430.0" layoutY="99.0"
+			prefWidth="43.0" text="" textAlignment="RIGHT" />
+	</children>
+</AnchorPane>

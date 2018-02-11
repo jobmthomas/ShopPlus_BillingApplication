@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<!-- <property name="hibernate.connection.driver_class">org.postgresql.Driver</property> -->
+		<!-- <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/postgres</property> -->
+		<!-- <property name="hibernate.connection.username">postgres</property> -->
+		<!-- <property name="connection.password">admin</property> -->
+		<!-- <property name="connection.pool_size">1</property> -->
+		<!-- <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property> -->
+		<!-- <property name="show_sql">true</property> -->
+		<!-- <property name="hbm2ddl.auto">create</property> -->
+
+		<mapping class="com.shopplus.hibernate.StockMaster" />
+		<mapping class="com.shopplus.hibernate.StockDetails" />
+		<mapping class="com.shopplus.hibernate.BillMaster" />
+		<mapping class="com.shopplus.hibernate.BillDetails" />
+		<mapping class="com.shopplus.hibernate.DealerMaster" />
+		<mapping class="com.shopplus.hibernate.DoctorMaster" />
+		<mapping class="com.shopplus.hibernate.SalesReturnMaster" />
+		<mapping class="com.shopplus.hibernate.SalesReturnDetails" />
+		<mapping class="com.shopplus.hibernate.BillNumberSequence" />
+		<mapping class="com.shopplus.hibernate.SalesReturnNumberSequence" />
+		<mapping class="com.shopplus.hibernate.Login" />
+
+		<mapping class="com.shopplus.hibernate.PurchaseInvoiceMaster" />
+
+
+	</session-factory>
+</hibernate-configuration>

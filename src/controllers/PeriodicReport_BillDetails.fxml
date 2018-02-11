@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import controllers.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="483.0"
+	prefWidth="1083.9999000000025" xmlns:fx="http://javafx.com/fxml/1"
+	xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.PeriodicReportBillDetailsController">
+	<children>
+		<TabPane layoutX="0.0" layoutY="0.0" prefHeight="469.0"
+			prefWidth="1084.0" tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab text="Sales">
+					<content>
+						<AnchorPane id="Content" minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView fx:id="salesTable" layoutX="22.0" layoutY="36.0"
+									prefHeight="285.0" prefWidth="1038.0" />
+								<Label alignment="TOP_LEFT" layoutX="26.0" layoutY="13.0"
+									prefWidth="127.0" text="Sales Summary" textAlignment="LEFT"
+									textOverrun="CENTER_ELLIPSIS" underline="true" />
+								<Button id="initBillTable" layoutX="995.0" layoutY="330.0"
+									mnemonicParsing="false" onMouseClicked="#nextSalesTable" text="&gt;&gt; Next" />
+								<Button layoutX="24.0" layoutY="330.0" mnemonicParsing="false"
+									onMouseClicked="#previousSalesTable" text="&lt;&lt; Previous " />
+								<Button layoutX="950.0" layoutY="9.0" mnemonicParsing="false"
+									onMouseClicked="#openReportFileSales" text="Open Report File" />
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab text="Sales Returns">
+					<content>
+						<AnchorPane id="Content" minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView fx:id="salesReturnTable" layoutX="22.0"
+									layoutY="36.0" prefHeight="285.0" prefWidth="1038.0" />
+								<Label alignment="TOP_LEFT" layoutX="26.0" layoutY="13.0"
+									prefWidth="127.0" text="Sales Return Summary" textAlignment="LEFT"
+									textOverrun="CENTER_ELLIPSIS" underline="true" />
+								<Button id="initBillTable" layoutX="995.0" layoutY="330.0"
+									mnemonicParsing="false" onMouseClicked="#nextSalesReturnTable"
+									text="&gt;&gt; Next" />
+								<Button layoutX="24.0" layoutY="330.0" mnemonicParsing="false"
+									onMouseClicked="#previousSalesReturnTable" text="&lt;&lt; Previous " />
+								<Button layoutX="949.0" layoutY="9.0" mnemonicParsing="false"
+									onMouseClicked="#openReportFileReturn" text="Open Report File" />
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab text="Sales Detailed">
+					<content>
+						<AnchorPane id="Content" minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView fx:id="salesDetailedTable" layoutX="22.0"
+									layoutY="36.0" prefHeight="285.0" prefWidth="1038.0" />
+								<Label alignment="TOP_LEFT" layoutX="26.0" layoutY="13.0"
+									prefWidth="127.0" text="Sales Summary" textAlignment="LEFT"
+									textOverrun="CENTER_ELLIPSIS" underline="true" />
+								<Button id="initBillTable" layoutX="995.0" layoutY="330.0"
+									mnemonicParsing="false" onMouseClicked="#nextSalesDetailedTable"
+									text="&gt;&gt; Next" />
+								<Button layoutX="24.0" layoutY="330.0" mnemonicParsing="false"
+									onMouseClicked="#previousSalesDetailedTable" text="&lt;&lt; Previous " />
+								<Button layoutX="949.0" layoutY="9.0" mnemonicParsing="false"
+									onMouseClicked="#openReportFileSalesDetails" text="Open Report File" />
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab text="Sales Return Detailed">
+					<content>
+						<AnchorPane id="Content" minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView fx:id="salesReturnDetailedTable" layoutX="22.0"
+									layoutY="36.0" prefHeight="285.0" prefWidth="1038.0" />
+								<Label alignment="TOP_LEFT" layoutX="26.0" layoutY="13.0"
+									prefWidth="127.0" text="Sales Summary" textAlignment="LEFT"
+									textOverrun="CENTER_ELLIPSIS" underline="true" />
+								<Button id="initBillTable" layoutX="995.0" layoutY="330.0"
+									mnemonicParsing="false" onMouseClicked="#nextSalesReturnDetailedTable"
+									text="&gt;&gt; Next" />
+								<Button layoutX="24.0" layoutY="330.0" mnemonicParsing="false"
+									onMouseClicked="#previousSalesReturnDetailedTable" text="&lt;&lt; Previous " />
+								<Button layoutX="944.0" layoutY="9.0" mnemonicParsing="false"
+									onMouseClicked="#openReportFileReturnDetails" text=" Open Report File " />
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab text="Purchase">
+					<content>
+						<AnchorPane id="Content" minHeight="0.0" minWidth="0.0"
+							prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView id="PurchaseTable" fx:id="PurchaseTable"
+									layoutX="22.0" layoutY="36.0" prefHeight="285.0" prefWidth="1038.0" />
+								<Label alignment="TOP_LEFT" layoutX="26.0" layoutY="12.0"
+									prefWidth="127.0" text="Purchase Summary" textAlignment="LEFT"
+									textOverrun="CENTER_ELLIPSIS" underline="true" />
+								<Button id="initBillTable" layoutX="995.0" layoutY="330.0"
+									mnemonicParsing="false" onMouseClicked="#nextPurchaseTable"
+									text="&gt;&gt; Next" />
+								<Button layoutX="24.0" layoutY="330.0" mnemonicParsing="false"
+									onMouseClicked="#previousPurchaseTable" text="&lt;&lt; Previous " />
+								<Button layoutX="944.0" layoutY="9.0" mnemonicParsing="false"
+									onMouseClicked="#openReportFilePurchase" text=" Open Report File " />
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+	</children>
+</AnchorPane>

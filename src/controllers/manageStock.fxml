@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import controllers.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="483.0"
+	prefWidth="1083.9999000000025" xmlns:fx="http://javafx.com/fxml/1"
+	xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.ManageStockController">
+	<children>
+		<TabPane layoutX="0.0" layoutY="0.0" prefHeight="483.0"
+			prefWidth="1084.0" tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab text="Add Stock">
+					<content>
+						<fx:include source="AddStock.fxml" prefHeight="384.0"
+							prefWidth="1084.0" />
+					</content>
+				</Tab>
+				<Tab text="Search/Edit">
+					<content>
+						<fx:include source="SearchEditStock.fxml" prefHeight="384.0"
+							prefWidth="1084.0" />
+					</content>
+				</Tab>
+				<Tab text="Dealer Management">
+					<content>
+						<fx:include source="DealerManagement.fxml" prefHeight="384.0"
+							prefWidth="1084.0" />
+					</content>
+				</Tab>
+
+			</tabs>
+		</TabPane>
+	</children>
+</AnchorPane>

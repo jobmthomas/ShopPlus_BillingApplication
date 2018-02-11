@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import controllers.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AddStockController" minHeight="0.0" minWidth="0.0" prefHeight="483.0" prefWidth="1083.9999000000025" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controllers.PurchaseInvoiceController">
+  <children>
+    <TabPane layoutX="7.0" layoutY="14.0" prefHeight="462.0" prefWidth="1069.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="New Bill">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Separator layoutX="0.0" layoutY="59.0" minHeight="2.0" prefHeight="2.0" prefWidth="1069.0" />
+                <DatePicker fx:id="invoiceDate" layoutX="208.0" layoutY="77.0" prefWidth="200.0" />
+                <Label layoutX="85.0" layoutY="83.0" prefWidth="86.0" text="Invoice Date" />
+                <Label layoutX="84.0" layoutY="160.0" text="Company Name" />
+                <TextField fx:id="companyName" layoutX="208.0" layoutY="158.0" prefWidth="200.0" />
+                <Label layoutX="84.0" layoutY="203.0" text="HSN/SAC" />
+                <TextField fx:id="hsnSac" layoutX="207.0" layoutY="194.0" prefWidth="200.0001220703125" />
+                <Label layoutX="85.0" layoutY="240.0" text="Total Amount" />
+                <TextField fx:id="totalAmount" layoutX="208.0" layoutY="234.0" prefWidth="200.0001220703125" />
+                <Label layoutX="84.0" layoutY="273.0" prefWidth="86.0" text="CGST" />
+                <TextField fx:id="cGst" layoutX="207.0" layoutY="267.0" prefWidth="200.0001220703125" />
+                <Label layoutX="84.0" layoutY="310.0" prefWidth="33.0" text="SGST" />
+                <TextField fx:id="sGst" layoutX="208.0" layoutY="307.0" prefWidth="200.0001220703125" />
+                <Label layoutX="85.0" layoutY="342.0" text="Payed" />
+                <TextField fx:id="payed" layoutX="208.0" layoutY="339.0" prefWidth="200.0" />
+                <Separator layoutX="536.0" layoutY="64.0" minWidth="1.99993896484375" orientation="VERTICAL" prefHeight="356.0" prefWidth="1.99993896484375" />
+                <Button layoutX="89.0" layoutY="386.0" mnemonicParsing="false" onMouseClicked="#clear" text="Clear" />
+                <Button layoutX="208.0" layoutY="386.0" mnemonicParsing="false" onMouseClicked="#save" prefWidth="86.0" text="Save" />
+                <Label layoutX="86.0" layoutY="120.0" text="Invoice Number" />
+                <TextField fx:id="invoiceNumber" layoutX="208.0" layoutY="118.0" prefWidth="200.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Edit Bill">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TableView fx:id="purchaseInvoiceTable" layoutX="30.0" layoutY="197.0" prefHeight="210.0" prefWidth="1014.0">
+                  <columns>
+                    <TableColumn editable="false" maxWidth="5000.0" minWidth="10.0" prefWidth="139.0" text="INVOICE NUMBER" fx:id="invoiceNoColumn" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="187.0" text="INVOICE DATE" fx:id="invoiceDateColumn" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" text="COMPANY NAME" fx:id="companyNameColumn" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" text="HSN/SAC" fx:id="hsnSacColumn" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" text="TOTAL AMOUNT" fx:id="totalAmountColumn" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" text="CGST" fx:id="cGstColumn" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" text="SGST" fx:id="sGstColumn" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" text="PAYED" fx:id="payedColumn" />
+                    <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="128.0" text="ACTION" fx:id="actionColumn" />
+                  </columns>
+                </TableView>
+                <Label layoutX="36.0" layoutY="109.0" text="Invoice Date" />
+                <Button layoutX="851.0" layoutY="107.0" mnemonicParsing="false" onMouseReleased="#recentlyAdded" prefWidth="179.0" text="RECENTLY ADDED" />
+                <Button layoutX="851.0" layoutY="142.0" mnemonicParsing="false" onMouseReleased="#notFullyPayed" prefWidth="179.0" text="NOT FULLY PAYED" />
+                <DatePicker fx:id="invoiceDateSearch" layoutX="127.0" layoutY="106.0" prefWidth="200.0" />
+                <Button layoutX="657.0" layoutY="109.0" mnemonicParsing="false" onMouseReleased="#Search" prefHeight="48.999900000002526" prefWidth="90.00009999999747" text="Search" />
+                <Label layoutX="36.0" layoutY="150.0" text="Invoice Number" />
+                <TextField id="bill" fx:id="invoiceNumberSearch" layoutX="127.0" layoutY="144.0" prefWidth="200.0" />
+                <Separator layoutX="0.0" layoutY="59.0" minHeight="2.0" prefHeight="2.0" prefWidth="1069.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

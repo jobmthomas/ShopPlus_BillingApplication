@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BILL>
+	<BILL_DIMENTION width="100" normalFontSize="12" />
+	<SHOP_NAME size="11" value="AMMUS GREETING GALLERY" lineNo="1"
+		position="45" fontSize="16" />
+	<HEADER>
+
+		<PRINT_CHAR size="8" value="BILL NO:" lineNo="1" position="1"
+			align="left" />
+		<BILL_NO size="10" lineNo="1" position="10" align="left" />
+		<PRINT_CHAR size="8" value="DATE:" lineNo="1" position="30"
+			align="left" />
+		<DATE size="10" lineNo="1" position="38" format="yyyy-MM-dd" />
+
+		<PRINT_CHAR size="11" value="AMMUS GREETING GALLERY"
+			lineNo="3" position="11" fontSize="16" />
+		<PRINT_CHAR size="11" value="KOLENCHERY,PH 9895530500"
+			lineNo="4" position="14" />
+		<PRINT_CHAR size="11" value="GSTIN:XXXXXXXXXXXX" lineNo="5"
+			position="17" />
+
+		<PRINT_CHAR size="10" position="1" value="BILLED TO:"
+			lineNo="6" />
+		<CUSTOMER_NAME size="49" lineNo="6" position="11" align="left" />
+
+		<PRINT_CHAR size="100"
+			value="----------------------------------------------------" lineNo="7"
+			position="1" align="left" />
+		<PRINT_CHAR size="1" position="1" value="|" lineNo="8" />
+		<PRINT_CHAR size="15" position="2" value="ITEM NAME"
+			lineNo="8" align="left" />
+		<PRINT_CHAR size="1" position="17" value="|" lineNo="8" />
+		<PRINT_CHAR size="8" position="18" value="RATE" lineNo="8"
+			align="center" />
+		<PRINT_CHAR size="1" position="26" value="|" lineNo="8" />
+		<PRINT_CHAR size="8" position="27" value="DISCOUNT" lineNo="8"
+			align="center" />
+		<PRINT_CHAR size="1" position="35" value="|" lineNo="8" />
+		<PRINT_CHAR size="3" position="36" value="QTY" lineNo="8"
+			align="center" />
+		<PRINT_CHAR size="1" position="39" value="|" lineNo="8" />
+		<PRINT_CHAR size="8" position="40" value="TOTAL" lineNo="8"
+			align="center" />
+		<PRINT_CHAR size="1" position="49" value="|" lineNo="8" />
+		<PRINT_CHAR size="100"
+			value="----------------------------------------------------" lineNo="9"
+			position="1" align="left" />
+	</HEADER>
+	<ITEMS maxItemPerPage="100" lineNo="10">
+		<PRINT_CHAR size="1" position="1" value="|" />
+		<ITEM_NAME size="15" position="2" align="left" />
+		<PRINT_CHAR size="1" position="17" value="|" />
+		<RATE size="8" position="18" decimalFormat="#0.00" align="center" />
+		<PRINT_CHAR size="1" position="26" value="|" />
+		<DISCOUNT size="8" position="27" decimalFormat="###.##"
+			align="center" />
+		<PRINT_CHAR size="1" position="35" value="|" />
+		<QTY size="3" position="36" align="center" />
+		<PRINT_CHAR size="1" position="39" value="|" />
+		<NET_TOTAL size="8" position="40" decimalFormat="#0.00"
+			align="center" />
+		<PRINT_CHAR size="1" position="49" value="|" />
+	</ITEMS>
+	<FOOTER>
+		<PRINT_CHAR size="100"
+			value="----------------------------------------------------"
+			position="1" lineNo="1" align="left" />
+	</FOOTER>
+	<TOTALS inReferenceToItems="true">
+
+		<PRINT_CHAR size="12" position="25" value="GRAND TOTAL:"
+			lineNo="2" />
+		<RATE_TOTAL size="8" lineNo="2" position="40"
+			decimalFormat="#0.00" align="left" />
+		<PRINT_CHAR size="12" position="25" value="FINAL AMOUNT:"
+			lineNo="3" />
+		<DISCOUNT_TOTAL size="8" lineNo="3" position="40"
+			decimalFormat="#0.00" align="left" />
+
+
+
+
+		<PRINT_CHAR size="12" position="25" value="GRAND TOTAL:"
+			lineNo="4" />
+		<GRAND_TOTAL size="8" lineNo="4" position="40"
+			decimalFormat="#0.00" align="left" />
+		<PRINT_CHAR size="12" position="25" value="FINAL AMOUNT:"
+			lineNo="5" />
+		<FINAL_TOTAL size="8" lineNo="5" position="40"
+			decimalFormat="#0.00" align="left" />
+
+		<PRINT_CHAR size="30" position="15" value=" " lineNo="6"
+			align="left" />
+		<PRINT_CHAR size="30" position="15" value="THANK YOU , VISIT AGAIN"
+			lineNo="7" align="left" />
+		<PRINT_CHAR size="30" position="15" value=" " lineNo="7"
+			align="left" />
+		<PRINT_CHAR size="30" position="15" value=" " lineNo="8"
+			align="left" />
+		<PRINT_CHAR size="30" position="15" value=" " lineNo="9"
+			align="left" />
+		<PRINT_CHAR size="30" position="15" value=" " lineNo="10"
+			align="left" />
+		<PRINT_CHAR size="30" position="15" value=" " lineNo="8"
+			align="left" />
+		<PRINT_CHAR size="30" position="15" value=" " lineNo="7"
+			align="left" />
+		<PRINT_CHAR size="30" position="15" value=" " lineNo="8"
+			align="left" />
+	</TOTALS>
+</BILL>

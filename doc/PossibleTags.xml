@@ -1,0 +1,74 @@
+<BILL>
+	<BILL_DIMENTION width="100" hight="30"
+		removeUnusedLines="true" />
+	<HEADER>
+		<PRINT_CHAR size="100" value="Taxable" lineNo="10"
+			position="100" />
+		<CUSTOMER_NAME size="10" lineNo="10" position="100" />
+		<DR_NAME size="10" lineNo="10" position="100" />
+		<LISCENCE_NO value="LNO101011010" size="30" lineNo="10"
+			position="100" />
+		<GSTIN value="GSTIN13123123" size="30" lineNo="10" position="100" />
+		<BILL_NO size="10" lineNo="10" position="100" />
+		<DATE size="10" lineNo="10" position="100" format="yyyy-MM-dd" />
+	</HEADER>
+
+	#For individual items
+	<ITEMS maxItemPerPage="5" lineNo="10">
+		<PRINT_CHAR size="1" position="1" value="|" />
+		<SL_NO size="3" position="100" />
+		<QTY size="3" position="100" />
+		<ITEM_NAME size="20" position="100" />
+		<RACK size="3" position="100" />
+		<COMPANY_NAME size="20" position="100" />
+		<BATCH_NO size="20" position="100" />
+		<EXPD size="20" position="100" format="yy-MM" />
+		<RATE size="20" position="100" decimalFormat="#0.00" />
+		<AMOUNT size="20" position="100" decimalFormat="#0.00" />
+		<DISCOUNT size="20" position="100" decimalFormat="#0.00" />
+		<DISCOUNT_PER size="20" position="100" decimalFormat="#0.00" />
+		<CGST size="20" position="100" decimalFormat="#0.00" />
+		<CGST_PER size="20" position="100" decimalFormat="#0.00" />
+		<SGST size="20" position="100" decimalFormat="#0.00" />
+		<SGST_PER size="20" position="100" decimalFormat="#0.00" />
+		<GST size="20" position="100" decimalFormat="#0.00" />
+		<GST_PER size="20" position="100" decimalFormat="#0.00" />
+		<TAXABLE_AMOUNT size="20" position="100" decimalFormat="#0.00" />
+		<TOTAL size="10" position="100" prefix=" USD" decimalFormat="#0.00" />
+		<NET_TOTAL size="10" position="100" prefix=" USD"
+			decimalFormat="#0.00" />
+	</ITEMS>
+
+	<FOOTER>
+		<PRINT_CHAR size="1" lineNo="10" position="1" value="|" />
+		<TAXABLE_AMOUNT_TOTAL size="20" lineNo="10"
+			position="100" decimalFormat="#0.00" />
+		<CGST_TOTAL size="20" lineNo="10" position="100"
+			decimalFormat="#0.00" />
+		<SGST_TOTAL size="20" lineNo="10" position="100"
+			decimalFormat="#0.00" />
+		<GST_TOTAL size="20" lineNo="10" position="100"
+			decimalFormat="#0.00" />
+		<GRAND_TOTAL size="8" lineNo="10" position="100"
+			decimalFormat="#0.00" />
+
+	</FOOTER>
+	<TOTALS inReferenceToItems="true/false">
+		<PRINT_CHAR size="1" lineNo="10" position="1" value="|" />
+		<TAXABLE_AMOUNT_TOTAL size="20" lineNo="10"
+			position="100" decimalFormat="#0.00" />
+		<CGST_TOTAL size="20" lineNo="10" position="100"
+			decimalFormat="#0.00" />
+		<SGST_TOTAL size="20" lineNo="10" position="100"
+			decimalFormat="#0.00" />
+		<GST_TOTAL size="20" lineNo="10" position="100"
+			decimalFormat="#0.00" />
+		<GRAND_TOTAL size="8" lineNo="10" position="100"
+			decimalFormat="#0.00" />
+		<EXTRA_DISCOUNT size="8" lineNo="2" position="70"
+			decimalFormat="#0.00" />
+		<FINAL_TOTAL size="8" lineNo="2" position="70"
+			decimalFormat="#0.00" />
+	</TOTALS>
+
+</BILL>

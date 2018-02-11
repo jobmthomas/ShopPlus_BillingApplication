@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox minHeight="597.0" prefHeight="627.0000999999975" prefWidth="1085.0"
+	xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2"
+	fx:controller="controllers.MainController">
+	<children>
+		<MenuBar VBox.vgrow="NEVER">
+			<menus>
+				<Menu mnemonicParsing="false" text="" />
+			</menus>
+		</MenuBar>
+		<AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0"
+			prefWidth="-1.0" VBox.vgrow="ALWAYS">
+			<children>
+				<TabPane fx:id="tabedPaneMain" layoutX="0.0" layoutY="60.0"
+					prefHeight="510.0" prefWidth="1084.0" tabClosingPolicy="UNAVAILABLE">
+					<tabs>
+						<Tab text="Manage Stock">
+							<content>
+								<fx:include fx:id="manageStock" source="manageStock.fxml"
+									prefHeight="479.0" prefWidth="782.0" />
+							</content>
+						</Tab>
+						<Tab text="Purchase Billing">
+							<content>
+								<fx:include source="PurchaseBilling.fxml" prefHeight="384.0"
+									prefWidth="1084.0" />
+							</content>
+						</Tab>
+						<Tab text="Sales Billing">
+							<content>
+								<fx:include source="Billing.fxml" prefHeight="384.0"
+									prefWidth="1084.0" />
+							</content>
+						</Tab>
+						<Tab text="Sales Return">
+							<content>
+								<fx:include source="SalesReturn.fxml" prefHeight="384.0"
+									prefWidth="1084.0" />
+							</content>
+						</Tab>
+						<Tab text="Cancel Sales Bill">
+							<content>
+								<fx:include source="CancelBill.fxml" prefHeight="384.0"
+									prefWidth="1084.0" />
+							</content>
+						</Tab>
+						<Tab text="Sales Reports">
+							<content>
+								<fx:include source="PeriodicReports.fxml" prefHeight="384.0"
+									prefWidth="1084.0" />
+							</content>
+						</Tab>
+					</tabs>
+				</TabPane>
+				<Label layoutX="69.0" layoutY="579.0" prefWidth="277.0"
+					text="Copyright Protected " />
+				<Text fill="#e08f0d" layoutX="523.0" layoutY="36.0"
+					scaleX="3.3427861892173354" scaleY="2.190406276336672" strokeType="OUTSIDE"
+					strokeWidth="0.0" text="ShopPlus">
+					<font>
+						<Font name="Bell MT Bold" size="12.0" />
+					</font>
+				</Text>
+				<Separator layoutX="539.0" layoutY="573.0" minWidth="0.4998779296875"
+					orientation="VERTICAL" prefHeight="30.0" prefWidth="1.99993896484375" />
+				<Separator layoutX="2.0" layoutY="570.0" minHeight="0.9998779296875"
+					prefHeight="2.0" prefWidth="1085.0" />
+				<Label fx:id="globalMessage" layoutX="564.0" layoutY="576.0"
+					prefWidth="509.0" text="" />
+				<Button layoutX="1018.0" layoutY="15.0" minWidth="43.0"
+					mnemonicParsing="false" onMouseClicked="#manageUser" prefWidth="43.0"
+					text="">
+					<graphic>
+						<ImageView fx:id="img" fitHeight="30.0" fitWidth="39.9999989966178"
+							pickOnBounds="true" preserveRatio="true" />
+					</graphic>
+				</Button>
+				<Button layoutX="34.0" layoutY="14.0" minWidth="43.0"
+					mnemonicParsing="false" onMouseClicked="#simpleBilling" prefWidth="43.0"
+					text="">
+					<graphic>
+						<ImageView id="img" fx:id="simpleBilling" fitHeight="30.0"
+							fitWidth="39.9999989966178" pickOnBounds="true" preserveRatio="true" />
+					</graphic>
+				</Button>
+				<Button layoutX="2.0" layoutY="572.0" minWidth="43.0"
+					mnemonicParsing="false" onMouseClicked="#closeApp" prefWidth="43.0"
+					text="">
+					<graphic>
+						<ImageView id="closeApp" fx:id="closeAppImg" fitHeight="24.999999934976753"
+							fitWidth="33.33333396911621" onMouseClicked="#closeApp"
+							pickOnBounds="true" preserveRatio="true" />
+					</graphic>
+				</Button>
+			</children>
+		</AnchorPane>
+	</children>
+</VBox>
